@@ -1,1 +1,11 @@
-<svg><circle cx='50' cy='50' r='40' fill='red'/></svg>
+
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Outcome badge">
+  <rect x="24" y="16" width="152" height="168" rx="32" fill="#020617" stroke="#111827" stroke-width="4"/>
+  <path d="M100 30L150 54V102C150 129 134 153 100 170C66 153 50 129 50 102V54L100 30Z" fill="#ef4444" />
+  <path d="M76 74C88 74 108 80 124 94" stroke="#f9fafb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M76 90C88 90 108 96 124 110" stroke="#f9fafb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M76 106C88 106 108 112 124 126" stroke="#f9fafb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M124 70C112 70 92 76 76 90" stroke="#f9fafb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M124 86C112 86 92 92 76 106" stroke="#f9fafb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M124 102C112 102 92 108 76 122" stroke="#f9fafb" stroke-width="3" stroke-linecap="round"/>
+</svg>

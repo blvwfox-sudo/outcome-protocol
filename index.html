@@ -1,19 +1,144 @@
 
-<!DOCTYPE html><html><head>
-<title>Outcome Protocol</title>
-<link rel="stylesheet" href="styles.css">
-</head><body>
-<header><div class="container"><h1>Outcome Protocol Suite</h1></div></header>
-<div class="container">
-<div class="card"><h2>Protocol Categories</h2>
-<ul>
-<li><span class="badge">Performance</span> Super Soldier · Recomp</li>
-<li><span class="badge">Recovery</span> Wolverine · Longevity Alpha</li>
-<li><span class="badge">Fat Loss</span> Metabolic Burn</li>
-</ul>
-<a href="protocol.html">View All Protocols</a>
-</div>
-</div>
-<footer><div class="container">Outcome Protocol Framework</div></footer>
-<script src="script.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Outcome Protocol | Tactical Performance & Longevity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Outcome Protocol is a tactical, goal-based peptide framework grouped into recovery, performance, longevity and fat loss tracks." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/outcome-badge.svg" alt="Outcome badge" class="brand-mark" />
+        <div class="brand-text">
+          <span class="brand-name">OUTCOME</span>
+          <span class="brand-tag">PROTOCOL FRAMEWORK</span>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="protocol.html">Protocols</a>
+        <a href="peptides.html">Peptides</a>
+        <a href="calculator.html">Planner</a>
+        <a href="#cta" class="nav-cta">Download Blueprint</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">TACTICAL · GOAL-BASED · PEPTIDE FRAMEWORK</p>
+          <h1>The Outcome Protocol Suite</h1>
+          <p>
+            Five mission-driven protocols grouped by outcome: recovery, performance, longevity and fat loss.
+            Use this as a briefing tool with your clinician – then deploy under medical supervision.
+          </p>
+          <div class="hero-actions">
+            <a href="protocol.html" class="btn primary">View All Protocols</a>
+            <a href="super-soldier.html" class="btn secondary">Flagship: Super Soldier</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <article class="hero-card">
+            <h2>Protocol Categories</h2>
+            <ul>
+              <li><span class="badge badge-blue">Performance</span> Super Soldier · Recomp</li>
+              <li><span class="badge badge-green">Recovery</span> Wolverine · Longevity Alpha</li>
+              <li><span class="badge badge-amber">Fat Loss</span> Metabolic Burn</li>
+            </ul>
+            <p class="hero-note">
+              Educational framework only. Outcome does not prescribe, diagnose, or treat.
+              All peptide use must be supervised by a licensed medical professional.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-header">
+        <h2>Choose Your Primary Outcome</h2>
+        <p>Pick the mission first. The stack, training, and nutrition decisions follow from the objective.</p>
+      </div>
+      <div class="container grid-3">
+        <article class="card">
+          <p class="tagline">Recovery & Repair</p>
+          <h3>Wolverine Protocol™</h3>
+          <p>For injury repair, joint issues, and overuse patterns that need focused recovery – without losing momentum.</p>
+          <ul class="bullet-list">
+            <li>BPC-157 · TB-500 · GHK-Cu</li>
+            <li>4–8 week blocks</li>
+            <li>Beginner–Advanced friendly</li>
+          </ul>
+          <a href="wolverine.html" class="btn secondary" style="margin-top:0.75rem;">Open Wolverine</a>
+        </article>
+        <article class="card">
+          <p class="tagline">Full-Spectrum Performance</p>
+          <h3>Super Soldier Protocol™</h3>
+          <p>For high-output blocks where performance, recomposition, and recovery all matter at the same time.</p>
+          <ul class="bullet-list">
+            <li>CJC/IPA · BPC · TB-500 · GHK-Cu · AOD-9604 · ± IGF-1</li>
+            <li>6–12 week blocks</li>
+            <li>Intermediate–Advanced</li>
+          </ul>
+          <a href="super-soldier.html" class="btn secondary" style="margin-top:0.75rem;">Open Super Soldier</a>
+        </article>
+        <article class="card">
+          <p class="tagline">Longevity & Composition</p>
+          <h3>Alpha · Burn · Recomp</h3>
+          <p>For long-haul health, collagen, and strategic fat loss and recomposition phases.</p>
+          <ul class="bullet-list">
+            <li>Longevity Alpha · Metabolic Burn · Recomp</li>
+            <li>6–12+ week blocks</li>
+            <li>Beginner–Intermediate</li>
+          </ul>
+          <a href="protocol.html" class="btn secondary" style="margin-top:0.75rem;">View All Tracks</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Download the Outcome Blueprint (Demo)</h2>
+          <p>
+            Turn this framework into a living protocol: export as PDF, bring it to your clinician, and track what actually changes
+            – sleep, training, labs, and how you feel in the real world.
+          </p>
+          <ul class="check-list">
+            <li>Clear, goal-based protocol map.</li>
+            <li>Peptide explanations in plain English.</li>
+            <li>Educational dosing & reconstitution examples.</li>
+          </ul>
+        </div>
+        <form class="cta-form" onsubmit="return false;">
+          <label for="cta-email">Email (demo only)</label>
+          <input id="cta-email" type="email" placeholder="you@example.com" />
+          <button class="btn primary full" type="submit">Send me the Blueprint</button>
+          <p class="form-helper">Form is for demo only – connect this to your email platform in production.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© Outcome Protocol – Educational Framework Only.</span>
+      <div class="footer-links">
+        <a href="protocol.html">Protocols</a>
+        <a href="peptides.html">Peptides</a>
+        <a href="calculator.html">Planner</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

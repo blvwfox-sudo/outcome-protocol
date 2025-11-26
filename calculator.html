@@ -1,12 +1,85 @@
 
-<!DOCTYPE html><html><head>
-<title>Outcome Calculator</title>
-<link rel="stylesheet" href="styles.css">
-</head><body>
-<header><div class="container"><h1>Educational Calculator</h1></div></header>
-<div class="container">
-<div class="card"><h2>How It Works</h2>
-<p>Example-only reconstitution math.</p>
-</div>
-</div>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Outcome Planner | Reconstitution & Units (Educational)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="subpage">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/outcome-badge.svg" alt="Outcome badge" class="brand-mark" />
+        <div class="brand-text">
+          <span class="brand-name">OUTCOME</span>
+          <span class="brand-tag">EDUCATIONAL PLANNER</span>
+        </div>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="protocol.html">Protocols</a>
+        <a href="peptides.html">Peptides</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="sub-main">
+    <section class="section">
+      <div class="container section-header">
+        <h1>Reconstitution & Units Planner</h1>
+        <p>This calculator demonstrates concentration and unit math for training purposes. It is not a dosing engine and must not be used to self-prescribe.</p>
+      </div>
+      <div class="container grid-2">
+        <form class="card calc-form" id="calcForm">
+          <h2>Inputs</h2>
+          <label for="vialAmount">Vial amount (mg)</label>
+          <input id="vialAmount" type="number" step="0.01" placeholder="e.g., 5" required />
+          <label for="bacVolume">Bacteriostatic water added (mL)</label>
+          <input id="bacVolume" type="number" step="0.1" placeholder="e.g., 2.5" required />
+          <label for="targetDose">Target dose (mcg)</label>
+          <input id="targetDose" type="number" step="1" placeholder="e.g., 250" required />
+          <label for="syringeSize">Insulin syringe size (units)</label>
+          <input id="syringeSize" type="number" step="1" placeholder="e.g., 100" value="100" required />
+          <button class="btn primary full" type="submit">Calculate (Educational Only)</button>
+        </form>
+        <article class="card">
+          <h2>Results</h2>
+          <p style="font-size:0.85rem; color:#9ca3af;">Use these numbers to understand the math only. Your real protocol must come from your clinician.</p>
+          <div class="result-grid hidden" id="resultGrid">
+            <div>
+              <h3>Concentration</h3>
+              <p><span id="concMgMl">–</span> mg/mL</p>
+              <p><span id="concMcgUnit">–</span> mcg per unit</p>
+            </div>
+            <div>
+              <h3>Per Dose</h3>
+              <p><span id="doseMl">–</span> mL per dose</p>
+              <p><span id="doseUnits">–</span> units per dose</p>
+            </div>
+          </div>
+          <p style="margin-top:0.8rem; font-size:0.8rem; color:#9ca3af;">
+            Double-check all calculations with your care team and pharmacy. Do not adjust therapy based solely on this tool.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Outcome Planner – concentration and unit math for education only.</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="protocol.html">Protocols</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
